@@ -1,7 +1,10 @@
-# Project Title
+# Pespsi Landing Page
 ![](/assets/screen.png)
 
-This is a ... [...](...). ...
+This is a ... [Creative Landing Page Design using Html CSS & Javascript | Website Design Tutorial
+](https://youtu.be/s_z5laE4KTw). ...
+
+This is a ... [How to Make Responsive Website using Html CSS & Javascript | Step by Step](https://youtu.be/hlYbsAnn3LM)
 
 ## Table of contents
 

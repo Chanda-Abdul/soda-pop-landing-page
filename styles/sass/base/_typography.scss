@@ -1,6 +1,10 @@
 @mixin heading-large {
+    font-family: $global-font;
+    font-weight: 900;
 }
 @mixin heading-medium {
 }
 @mixin body-text-primary {
+    font-family: $global-font;
+    font-weight: 400;
 }

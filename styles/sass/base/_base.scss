@@ -1,9 +1,20 @@
 body {
     font-size: $font-size-default;
-    font-family: $global-font;
+    @include body-text-primary;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: $background-off-white;
+    background: transparent;
     overflow-x: hidden;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    @include flex(column, space-between, flex-start);
+    text-align: left;
+    background: $primary-brand-color-blue;
+    color: #fff;
+    transition: .5s;
 }

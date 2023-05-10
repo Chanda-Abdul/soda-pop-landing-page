@@ -7,72 +7,122 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Website | Title</title>
+    <title>Pepsi | Landing Page</title>
     <link rel="stylesheet"
           href="styles/styles.css">
+    <link rel="icon"
+          href="assets/favicon.ico"
+          type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__logo">Logo</h1>
+    <header class="header"><img src="/assets/logo.png"
+             class="header__logo"
+             alt="logo">
+
         <nav class="header__navigation">
-            <a href="#"
-               class="header__navigation--link"
-               class="active">Link</a>
-            <a href="#"
-               class="header__navigation--link">Link</a>
-            <a href="#"
-               class="header__navigation--link">Link</a>
-            <a href="#"
-               class="header__navigation--link">Link</a>
+            <menu class="header__menu">
+                <li>
+                    <a href="#"
+                       class="header__menu--link"
+                       class="active">
+                        <span>Home</span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li><a href="#"
+                       class="header__menu--link">
+                        <span>Products</span>
+                        <span>Products</span></a></li>
+                <li><a href="#"
+                       class="header__menu--link">
+                        <span>What's New</span>
+                        <span>What's New</span></a></li>
+                <li><a href="#"
+                       class="header__menu--link">
+                        <span>Newsletter</span>
+                        <span>Newsletter</span>
+                    </a></li>
+
+                <li><a href="#"
+                       class="header__menu--link">
+                        <span>Contact</span>
+                        <span>Contact</span></a></li>
+            </menu>
         </nav>
     </header>
     <main>
-        <section class="parallax">
-            <img src="/assets/hill1.png"
-                 alt="hill"
-                 id="hill1">
-            <img src="/assets/hill2.png"
-                 alt="hill"
-                 id="hill2">
-            <img src="/assets/hill3.png"
-                 alt="hill"
-                 id="hill3">
-            <img src="/assets/hill4.png"
-                 alt="hill"
-                 id="hill4">
-           <img src="/assets/tree.png"
-                 alt="hill"
-                 id="tree">
-                  <h2 id="parallax-title"
-                class="parallax__title">Parallax Jungle</h2>
 
-            <img src="/assets/hill5.png"
-                 alt="hill"
-                 id="hill5">
-            
-            <img src="/assets/leaf.png"
-                 alt="hill"
-                 id="leaf">
-            <img src="/assets/plant.png"
-                 alt="hill"
-                 id="plant">
-        </section>
         <section class="content">
-            <h2 class="content__title">Content Title</h2>
-            <p class="content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, totam odio, aspernatur quis quae alias exercitationem placeat incidunt consequuntur repellat aut deserunt veniam, molestias magnam.
-            </p>
-            <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, rerum fugit. Maiores amet fugit at explicabo ratione velit accusamus dolorum a earum. Laudantium ipsa odit similique adipisci architecto deleniti cupiditate debitis molestias suscipit aliquam neque maxime, quasi pariatur cum. Et.
-            </p>
-            <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cum beatae nobis minus perferendis exercitationem. Nesciunt, atque! Voluptatibus, assumenda deleniti saepe vero aut incidunt esse dolore nihil, culpa commodi distinctio.
-            </p>
-            <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero dolore commodi ex ut quo voluptas vitae pariatur quibusdam? Accusamus?</p>
+            <div class="content__text">
+                <h1 class="content__title">That's What<br><span>I like</span></h1>
+                <h2 class="content__title--subtitle-primary">ALL YOUR
+                    FAVORITE FLAVORS.<br>
+                    ALL RIGHT HERE.</h2>
+                <h3 class="content__title--subtitle-secondary">Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here.
+                    Compare
+                    flavors, get nutritional facts and check out ingredients for all our Pepsi products.</h3>
+                <p class="content__text"> Refresh your day with Pepsi! Grab a cold can of your favorite flavor and feel
+                    the bold, fizzy taste that only Pepsi can offer. Don't wait any longer, quench your thirst and
+                    satisfy your craving for a delicious drink. Head to your nearest store and make Pepsi your go-to
+                    beverage today!</p>
+                <a href="#"
+                   class="content__link">View All Products</a>
+            </div>
+            <div class="img-container">
+                <img src="/assets/pepsi.png"
+                     alt="pepsi"
+                     id="hero-img">
+
+
+            </div>
+
         </section>
+        <figure class="thumbnail">
+            <img src="/assets/pepsi.png"
+                 class="thumbnail__img"
+                 alt="pepsi"
+                 onclick="imgSlider('pepsi.png');  updateBackgroundColor('#0062be')">
+            <img src="/assets/pepsi-diet.png"
+                 class="thumbnail__img"
+                 alt="diet pepsi"
+                 onclick="imgSlider('pepsi-diet.png');  updateBackgroundColor('#e60c2c')">
+            <img src="/assets/pepsi-zero.png"
+                 class="thumbnail__img"
+                 alt="pepsi zero"
+                 onclick="imgSlider('pepsi-zero.png');  updateBackgroundColor('#1e1e1e')">
+        </figure>
     </main>
     <footer class="footer">
-        <h3 class="footer__logo">Logo</h3>
-      <h4  class="footer__copy"> &copy; 2023</h4>
+        <menu class="footer__menu">
+            <li class="footer__menu--social-icon">
+                <a href="#"
+                   class="footer__link">
+                    <img src="/assets/facebook.png"
+                         alt="facebook"></a>
+            </li>
+            <li class="footer__menu--social-icon">
+                <a href="#"
+                   class="footer__link">
+                    <img src="/assets/twitter.png"
+                         alt="twitter"></a>
+            </li>
+            <li class="footer__menu--social-icon">
+                <a href="#"
+                   class="footer__link">
+                    <img src="/assets/instagram.png"
+                         alt="instagram"></a>
+            </li>
+
+        </menu>
+        <div class="footer__attribution">
+            <h3 class="footer__logo"><img src="/assets/logo.png"></h3>
+            <h4 class="footer__copy"> &copy; 2023</h4>
+        </div>
     </footer>
 </body>
-<script src="/scripts/index.js" defer></script>
+<script type="text/javascript"
+        src="/scripts/index.js"
+        defer></script>
+
 </html>
